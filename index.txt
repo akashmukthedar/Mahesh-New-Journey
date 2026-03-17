@@ -1,0 +1,244 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mahesh Biradar</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#222;
+}
+
+/* HERO */
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1519741497674-611481863552");
+background-size:cover;
+}
+
+header h1{
+font-size:55px;
+}
+
+header p{
+font-size:20px;
+margin-top:10px;
+}
+
+/* SECTION */
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+}
+
+/* SLIDER */
+.slider{
+max-width:900px;
+margin:40px auto;
+overflow:hidden;
+border-radius:15px;
+}
+
+.slides{
+display:flex;
+width:500%;
+animation:slide 18s infinite;
+}
+
+.slides img{
+width:100%;
+}
+
+/* CARTOON */
+.cartoon{
+background:white;
+padding:40px;
+border-radius:12px;
+max-width:600px;
+margin:auto;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.cartoon img{
+width:220px;
+border-radius:10px;
+}
+
+/* BUTTON */
+.btn{
+margin-top:20px;
+padding:12px 25px;
+background:#c0392b;
+color:white;
+border:none;
+border-radius:25px;
+cursor:pointer;
+font-size:16px;
+}
+
+/* HIDDEN MESSAGE */
+.hidden{
+display:none;
+margin-top:20px;
+font-size:18px;
+color:#444;
+}
+
+/* FOOTER */
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* ANIMATION */
+@keyframes slide{
+0%{transform:translateX(0);}
+20%{transform:translateX(0);}
+25%{transform:translateX(-100%);}
+45%{transform:translateX(-100%);}
+50%{transform:translateX(-200%);}
+70%{transform:translateX(-200%);}
+75%{transform:translateX(-300%);}
+95%{transform:translateX(-300%);}
+100%{transform:translateX(-400%);}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Mahesh Biradar</h1>
+<p>A Journey of Growth & A New Beginning with Nikita</p>
+
+</header>
+
+<div class="section">
+
+<h2>About</h2>
+
+<div class="container">
+
+<p>
+Mahesh Biradar is known for his calm personality,
+strong values and grounded approach to life.
+His journey reflects dedication and meaningful relationships.
+</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Life Journey</h2>
+
+<div class="container">
+
+<p>
+From early ambitions to building a strong path,
+every phase of life has shaped his character.
+Experiences and friendships define his journey.
+</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Moments</h2>
+
+<div class="slider">
+<div class="slides">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff">
+
+</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>The Groom</h2>
+
+<div class="cartoon">
+
+<!-- 🔥 IMPORTANT: Upload the cartoon image and rename -->
+<img src="cartoon.png">
+
+<p>
+Mahesh begins a meaningful journey with Nikita --
+built on trust, respect and shared dreams.
+</p>
+
+<p style="margin-top:20px;">
+
+A new journey begins -- bringing together two lives
+into one beautiful future filled with happiness.
+
+</p>
+
+<button class="btn" onclick="showMessage()">View Message</button>
+
+<p id="msg" class="hidden">
+Wishing you both a lifetime of love, success and togetherness ❤️
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>Mahesh Biradar & Nikita</p>
+
+</footer>
+
+<script>
+
+function showMessage(){
+document.getElementById("msg").style.display="block";
+}
+
+</script>
+
+</body>
+
+</html>
